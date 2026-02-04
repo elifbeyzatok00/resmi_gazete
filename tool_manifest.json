@@ -1,0 +1,22 @@
+{
+  "name": "resmi_gazete_getir",
+  "description": "Belirtilen tarih aralığındaki Resmi Gazete HTML ve PDF içeriklerini Tavily kullanarak getirir",
+  "method": "POST",
+  "path": "/tools/resmi_gazete_getir",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "start_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Başlangıç tarihi (YYYY-MM-DD)"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Bitiş tarihi (YYYY-MM-DD)"
+      }
+    },
+    "required": ["start_date", "end_date"]
+  }
+}
