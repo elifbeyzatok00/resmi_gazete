@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import os
-from tavily import Client as TavilyClient
+from tavily import TavilyClient
 import requests
 import io
 try:
