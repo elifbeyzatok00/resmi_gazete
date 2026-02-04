@@ -6,3 +6,5 @@ pdfplumber
 pytesseract
 pdf2image
 python-dateutil
+python-dotenv
+
